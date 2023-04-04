@@ -1,0 +1,382 @@
+/* BARRA DE NAVEGACIÓN: COLOR DE FONDO, ELIMINA LAS VIÑETAS, MARGEN PADDING */
+nav  ul {
+    list-style-type: none;
+    padding: 10px;
+    background-color: #000000;
+    margin:0%;
+    display: flex;
+    text-align: center;
+
+  }
+  nav li {
+    float: left;
+  }
+  /* BARRA DE N|AVEGACIÓN: TEXTO */
+  nav li a {
+    display: inline-block;
+    color: rgb(255, 255, 255);
+    justify-content: space-between;
+    padding: 10px;
+    text-decoration: none;
+    font-family: 'Tilt Neon', cursive;
+    font-size: 20px;
+  }
+  /* EFECTO DE LA BARRA DE NAVEGACION */
+  .first-ul li a:hover {
+    background-color: #0167ec;
+    transform: scale(1.3); 
+    transition: all 0.4s ease-out;
+    border-radius: 20px;
+  }
+  .first-ul li a:not(:hover) {
+    transform: scale(1);
+    transition: all 0.4s ease-out;
+    border-radius: 20px;
+}
+.navbar-iconos ul li  {
+  display: flex;
+  position: relative;
+  bottom: 8px;
+  justify-content: space-between;
+}
+  .navbar{
+    display: inline-flex;
+    height: 68px;
+    width: 100%;
+    background-color: #000000;
+  }
+  .fa-user {
+    font-size: 40px;
+  }
+  .fa-cart-shopping {
+    font-size: 40px;
+  }
+  .fa-star {
+    font-size: 40px;
+  }
+  
+  /* ELIMINAR MARCO BLANCO */
+  body {
+    margin:0%;
+    overflow-x: hidden;
+  }
+  /* PROPIEDADES FOOTER */
+.footer ul {
+  list-style-type: none;
+  display:grid;
+}
+.footer ul li a {
+  color: rgb(255, 255, 255);
+  
+}
+.footer ul li a:hover {
+transform: none;
+background-color: #0167ec;
+}
+.footer li a {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 20px;
+}
+
+
+/* ACÁ EMPIEZAN LAS MEDIA QUERIES */
+/* MEDIA QUERIE VISTA DE SMARTPHONES HASTA HD Y TABLETS DE BAJA RESOLUCION*/
+@media (max-width: 767px) {
+      main, footer, nav{display:flex;
+        align-items: center;}
+
+  .navbar {
+    display: flex;
+    flex-direction: column;
+  }
+        
+  .mobile-image {
+    display: block;
+    position: relative;
+    width: 100%;
+  }
+
+  .desktop-image {
+    display: none;
+  }
+
+  .navbar .navbar-iconos {
+    display: none;
+  }
+.navegation-mobile {    
+  display: flex;
+  position: sticky;
+  height: 68px;
+  width: 100%;
+  background-color: #000000;
+  justify-content: center;
+}
+.body{
+overflow-x: hidden;
+  
+}
+nav li a {
+  font-size: 18px;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* PROPIEDADES TEXTOS */
+h2 {
+  position: relative;
+  left: 10px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  color: aliceblue;
+}
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  position: relative;
+}
+}
+/* MEDIA QUERIE VISTA DE TABLET  */
+@media (min-width: 768px) and (max-width: 1023px) {
+.navegation-mobile {
+  display: inline-block;
+  height: 68px;
+  width: 100%;
+  justify-content: center;
+  background-color: #000000;
+}
+.grid {
+  display: grid;
+  grid-template-areas: 
+  "nav"
+  "main"
+  "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+}
+nav {grid-area: nav;}
+main {grid-area: main;}
+footer {grid-area: footer;}
+/* PÁGINA: PARLANTES PORTÁTILES */
+.mainGrid {
+  display: grid;
+  grid-template-areas: 
+  "TituloBanner TituloBanner TituloBanner"
+  "ImgBanner ImgBanner ImgBanner"
+  "TituloBanner2 TituloBanner2 TituloBanner2"
+  "ImgBanner2 ImgBanner2 ImgBanner2"
+  "TituloBanner3 TituloBanner3 TituloBanner3"
+  "ImgBanner3 ImgBanner3 ImgBanner3"
+  "TituloBanner4 TituloBanner4 TituloBanner4"
+  "ImgBanner4 ImgBanner4 ImgBanner4";
+  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-columns: 100%;
+}
+.TituloBanner{grid-area: TituloBanner;}
+.ImgBanner{grid-area: ImgBanner;}
+.TituloBanner2{grid-area: TituloBanner2;}
+.ImgBanner2{grid-area: ImgBanner2;}
+.TituloBanner3{grid-area: TituloBanner3;}
+.ImgBanner3{grid-area: ImgBanner3;}
+.TituloBanner4{grid-area: TituloBanner4;}
+.ImgBanner4{grid-area: ImgBanner4;}
+
+/* PÁGINA INDEX HTML */
+.MainIndex {
+  display: grid;
+  grid-template-areas: 
+  "encabezado encabezado encabezado"
+  "ImgEncabezado ImgEncabezado ImgEncabezado"
+  "encabezado2 encabezado2 encabezado2"
+  "ImgEncabezado2 ImgEncabezado2 ImgEncabezado2"
+  "ImgEncabezado3 ImgEncabezado3 ImgEncabezado3"
+  "encabezado3 encabezado3 encabezado3"
+  "ImgEncabezado4 ImgEncabezado4 ImgEncabezado4"
+  "ImgEncabezado5 ImgEncabezado5 ImgEncabezado5"
+;
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto auto auto auto ;
+
+}
+.encabezado{grid-area: encabezado;}
+.ImgEncabezado{grid-area: ImgEncabezado;}
+.encabezado2{grid-area: encabezado2;}
+.ImgEncabezado2{grid-area: ImgEncabezado2;}
+.ImgEncabezado3{grid-area: ImgEncabezado3;}
+.encabezado3{grid-area: encabezado3;}
+.ImgEncabezado4{grid-area: ImgEncabezado4;}
+.ImgEncabezado5{grid-area: ImgEncabezado5}
+
+/* PROPIEDADES TEXTOS */
+h2 {
+  position: relative;
+  left: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 34px;
+  color: aliceblue;
+}
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  position: relative;
+  left: 12px;
+}
+
+}
+/* MEDIA QUERIE TABLETS EN HORIZONTAL Y ESCRITORIO */
+@media only screen and (min-width: 1024px) {
+.grid {
+  display: grid;
+  grid-template-areas: 
+  "nav"
+  "main"
+  "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+}
+nav {grid-area: nav;}
+main {grid-area: main;}
+footer {grid-area: footer;}
+/* PÁGINA: PARLANTES PORTÁTILES */
+.mainGrid {
+  display: grid;
+  grid-template-areas: 
+  "TituloBanner TituloBanner TituloBanner"
+  "ImgBanner ImgBanner ImgBanner"
+  "TituloBanner2 TituloBanner2 TituloBanner2"
+  "ImgBanner2 ImgBanner2 ImgBanner2"
+  "TituloBanner3 TituloBanner3 TituloBanner3"
+  "ImgBanner3 ImgBanner3 ImgBanner3"
+  "TituloBanner4 TituloBanner4 TituloBanner4"
+  "ImgBanner4 ImgBanner4 ImgBanner4";
+  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-columns: 100%;
+}
+.TituloBanner{grid-area: TituloBanner;}
+.ImgBanner{grid-area: ImgBanner;}
+.TituloBanner2{grid-area: TituloBanner2;}
+.ImgBanner2{grid-area: ImgBanner2;}
+.TituloBanner3{grid-area: TituloBanner3;}
+.ImgBanner3{grid-area: ImgBanner3;}
+.TituloBanner4{grid-area: TituloBanner4;}
+.ImgBanner4{grid-area: ImgBanner4;}
+
+/* PÁGINA INDEX HTML */
+.MainIndex {
+  display: grid;
+  grid-template-areas: 
+  "encabezado encabezado encabezado"
+  "ImgEncabezado ImgEncabezado ImgEncabezado"
+  "encabezado2 encabezado2 encabezado2"
+  "ImgEncabezado2 ImgEncabezado2 ImgEncabezado2"
+  "encabezado3 encabezado3 encabezado3"
+  "ImgEncabezado3 ImgEncabezado3 ImgEncabezado3";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto ;
+
+}
+.encabezado{grid-area: encabezado;}
+.ImgEncabezado{grid-area: ImgEncabezado;}
+.encabezado2{grid-area: encabezado2;}
+.ImgEncabezado2{grid-area: ImgEncabezado2;}
+.encabezado3{grid-area: encabezado3;}
+.ImgEncabezado3{grid-area: ImgEncabezado3;}
+
+/* PRUEBA LOLA */
+.prueba {
+ display: grid;
+ grid-template-areas: 
+ "imgPrueba textoprueba"
+ ;
+ grid-template-columns: 30% 70%;
+ grid-template-rows: auto auto ;
+}
+.imgPrueba{grid-area: imgPrueba;}
+.textoprueba{grid-area: textoprueba;}
+.textolola {
+  font-family: 'Tilt Neon', cursive;
+  color: aliceblue;
+  font-size: 40px;
+
+}
+  .mobile-image {
+    display: none;
+  }
+
+  /* Muestra la imagen horizontal en pantallas grandes */
+  .desktop-image {
+    display: flex;
+    position: relative;
+    width: 100%;
+  }
+  .navegation-mobile {
+    display: none;
+  }
+   .navbar {
+    width:100%;
+  } 
+  .lala {
+    position: relative;
+    width: 300px;
+    display: flex;
+  }
+  .lala2 {
+    position: relative;
+    width: 200px;
+    display: flex;
+  }
+  /* PROPIEDADES TEXTOS */
+h2 {
+  position: relative;
+  left: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 34px;
+  color: aliceblue;
+}
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  position: relative;
+  left: 12px;
+}
+}
+
+/* ACÁ TERMINAN LAS MEDIA QUERIES */
+.container {
+  display: flex;
+}
+
+/* IMAGEN DE FONDO */
+body {
+  background-image:url(/CSS/Fondos/galaxia.jpg) ;
+
+} 
+
+/* PROPIEDADES FORMULARIO DE INICIO SESION */
+form {
+  position: relative;
+  top: 20px;
+  left: 400px;
+}
+/* VISTA DE PRODUCTOS */
+.product {
+  position: relative;
+  width: 300px;
+}
+.product2 {
+  position: relative;
+  width: 200px;
+}
+.card {
+  background-color: aliceblue;
+  border: 5px solid gray;
+  border-radius: 20px;
+}
+
+.container {
+display: flex;
+justify-content: space-between;
+margin: 80px;
+}
