@@ -348,12 +348,6 @@ h4 {
   display: flex;
 }
 
-/* IMAGEN DE FONDO */
-body {
-  background-image:url(/CSS/Fondos/galaxia.jpg) ;
-
-} 
-
 /* PROPIEDADES FORMULARIO DE INICIO SESION */
 form {
   position: relative;
