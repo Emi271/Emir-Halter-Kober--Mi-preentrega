@@ -1,0 +1,152 @@
+@media only screen and (min-width: 1024px) {
+.grid {
+  display: grid;
+  grid-template-areas: 
+  "nav"
+  "main"
+  "footer";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto;
+}
+nav {grid-area: nav;}
+main {grid-area: main;}
+footer {grid-area: footer;}
+/* PÁGINA: PARLANTES PORTÁTILES */
+.mainGrid {
+  display: grid;
+  grid-template-areas: 
+  "TituloBanner TituloBanner TituloBanner"
+  "ImgBanner ImgBanner ImgBanner"
+  "TituloBanner2 TituloBanner2 TituloBanner2"
+  "ImgBanner2 ImgBanner2 ImgBanner2"
+  "TituloBanner3 TituloBanner3 TituloBanner3"
+  "ImgBanner3 ImgBanner3 ImgBanner3"
+  "TituloBanner4 TituloBanner4 TituloBanner4"
+  "ImgBanner4 ImgBanner4 ImgBanner4";
+  grid-template-rows: auto auto auto auto auto auto auto;
+  grid-template-columns: 100%;
+}
+.TituloBanner{grid-area: TituloBanner;}
+.ImgBanner{grid-area: ImgBanner;}
+.TituloBanner2{grid-area: TituloBanner2;}
+.ImgBanner2{grid-area: ImgBanner2;}
+.TituloBanner3{grid-area: TituloBanner3;}
+.ImgBanner3{grid-area: ImgBanner3;}
+.TituloBanner4{grid-area: TituloBanner4;}
+.ImgBanner4{grid-area: ImgBanner4;}
+
+/* .footerGrid{
+display: grid;
+grid-template-areas: 
+"footer redes suscribe"
+"footer redes suscribe"
+"marca marca marca";
+grid-template-columns: 33% 34% 33%;
+grid-template-rows: auto auto auto;
+}
+.footer{grid-area: footer;}
+.redes{grid-area: redes;}
+.suscribe{grid-area: suscribe;}
+.marca{grid-area: marca;} */
+/* PÁGINA INDEX HTML */
+.MainIndex {
+  display: grid;
+  grid-template-areas: 
+  "encabezado encabezado encabezado"
+  "ImgEncabezado ImgEncabezado ImgEncabezado"
+  "encabezado2 encabezado2 encabezado2"
+  "ImgEncabezado2 ImgEncabezado2 ImgEncabezado2"
+  "ImgEncabezado3 ImgEncabezado3 ImgEncabezado3"
+  "encabezado3 encabezado3 encabezado3"
+  "ImgEncabezado4 ImgEncabezado4 ImgEncabezado4"
+  "ImgEncabezado5 ImgEncabezado5 ImgEncabezado5"
+  "btn-whatsapp btn-whatsapp btn-whatsapp";
+  grid-template-columns: 100%;
+  grid-template-rows: auto auto auto auto auto ;
+
+}
+.encabezado{grid-area: encabezado;}
+.ImgEncabezado{grid-area: ImgEncabezado;}
+.encabezado2{grid-area: encabezado2;}
+.ImgEncabezado2{grid-area: ImgEncabezado2;}
+.ImgEncabezado3{grid-area: ImgEncabezado3;}
+.encabezado3{grid-area: encabezado3;}
+.ImgEncabezado4{grid-area: ImgEncabezado4;}
+.ImgEncabezado5{grid-area: ImgEncabezado5;}
+.btn-whatsapp{grid-area: btn-whatsapp;}
+
+/* vista de productos pc laptop */
+/* VISTA DE PRODUCTOS */
+.product {
+  position: relative;
+  width: 300px;
+}
+.product2 {
+  position: relative;
+  width: 200px;
+}
+.card {
+  background-color: aliceblue;
+  border: 5px solid gray;
+  border-radius: 20px;
+}
+
+.container {
+display: flex;
+justify-content: space-between;
+margin: 80px;
+}
+
+/* LOGO WHATSAPPP FLOTANTE */
+.btn-whatsapp {
+  position: fixed;
+  width: 80px; 
+  height: 80px; 
+  line-height: 55px;
+  bottom: 100px;
+  right: 100px;
+ /*  padding: 15px; */
+  border-radius: 50px;
+  text-align: center;
+  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
+  z-index: 100;
+
+}
+.logowsp {
+  display: block;
+  position: fixed;
+  justify-content: center;
+  width: 75px;
+}
+/* termina el logo de whatsapp */
+.footer{
+  background-color:black;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  padding-bottom: 50px;
+}
+.footer-enlaces{
+  width: 310px;
+  margin-top: 40px;
+  margin-left: 20px;
+  border-radius: 20px;
+  display: flex;
+  background-color: #040325;
+}
+.redes{
+  background-color: #040325;
+  width: 200px;
+  margin: 20px;
+  margin-top: 40px;
+  padding: 10px;
+  border-radius: 20px;
+}
+.suscribe {
+  display: flex;
+  position: relative;
+  right: 400px;
+  top: 100px;
+}
+}
