@@ -82,7 +82,7 @@ footer {grid-area: footer;}
   grid-template-rows: repeat(2, 350px);
   justify-content: space-evenly;
   margin-left:  100px;
-  margin-bottom: 25px;
+  margin-bottom: 50px;
   gap: 40px;
   }
   .titulo-tarjeta {
@@ -203,7 +203,6 @@ footer {grid-area: footer;}
 .suscribe {
   display: flex;
   position: relative;
-  right: 400px;
   top: 100px;
 }
 .marca{
