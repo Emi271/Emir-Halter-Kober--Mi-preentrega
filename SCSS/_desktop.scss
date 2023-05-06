@@ -77,10 +77,9 @@ footer {grid-area: footer;}
   display: grid;
   grid-template-areas: 
   "tarjeta1 tarjeta2 tarjeta3"
-  "tarjeta4 tarjeta5 tarjeta6"
-  "tarjeta7 tarjeta8 tarjeta9";
+  "tarjeta4 tarjeta5 tarjeta6";
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: repeat(3, 350px);
+  grid-template-rows: repeat(2, 350px);
   justify-content: space-evenly;
   margin-left:  100px;
   margin-bottom: 25px;
