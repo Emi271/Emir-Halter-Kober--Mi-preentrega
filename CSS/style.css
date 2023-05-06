@@ -760,6 +760,12 @@ label {
     font-size: 22px;
     position: relative;
   }
+  h3 {
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-size: 24px;
+    color: aliceblue;
+  }
 }
 @media (min-width: 768px) and (max-width: 1023px) {
   .navbar .navbar-iconos {
