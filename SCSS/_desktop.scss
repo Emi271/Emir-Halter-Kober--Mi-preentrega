@@ -35,19 +35,7 @@ footer {grid-area: footer;}
 .TituloBanner4{grid-area: TituloBanner4;}
 .ImgBanner4{grid-area: ImgBanner4;}
 
-/* .footerGrid{
-display: grid;
-grid-template-areas: 
-"footer redes suscribe"
-"footer redes suscribe"
-"marca marca marca";
-grid-template-columns: 33% 34% 33%;
-grid-template-rows: auto auto auto;
-}
-.footer{grid-area: footer;}
-.redes{grid-area: redes;}
-.suscribe{grid-area: suscribe;}
-.marca{grid-area: marca;} */
+
 /* PÁGINA INDEX HTML */
 .MainIndex {
   display: grid;
@@ -78,25 +66,95 @@ grid-template-rows: auto auto auto;
 /* vista de productos pc laptop */
 /* VISTA DE PRODUCTOS */
 .product {
-  position: relative;
-  width: 300px;
-}
-.product2 {
-  position: relative;
-  width: 200px;
-}
-.card {
-  background-color: aliceblue;
-  border: 5px solid gray;
+  position:relative;
+  width: 240px;
+  top: 10px;
+  height: 200px;
   border-radius: 20px;
-}
+  }
 
-.container {
-display: flex;
-justify-content: space-between;
-margin: 80px;
-}
-
+.container{
+  display: grid;
+  grid-template-areas: 
+  "tarjeta1 tarjeta2 tarjeta3"
+  "tarjeta4 tarjeta5 tarjeta6"
+  "tarjeta7 tarjeta8 tarjeta9";
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(3, 350px);
+  justify-content: space-evenly;
+  margin-left:  100px;
+  margin-bottom: 25px;
+  gap: 40px;
+  }
+  .titulo-tarjeta {
+    margin: 0;
+    margin-top: 10px;
+    color: #000000;
+    font-size: 18px;
+  }
+  .precio-tarjeta {
+    font-family:"Tilt Neon", cursive; 
+  }
+  .boton {
+    position: relative;
+    font-size: 16px;
+    border-radius: 25px;
+  }
+  .tarjeta1 {
+    grid-area: tarjeta1;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta2 {
+    grid-area: tarjeta2;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta3 {
+    grid-area: tarjeta3;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta4 {
+    grid-area: tarjeta4;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta5 {
+    grid-area: tarjeta5;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta6 {
+    grid-area: tarjeta6;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  
 /* LOGO WHATSAPPP FLOTANTE */
 .btn-whatsapp {
   position: fixed;
@@ -148,5 +206,119 @@ margin: 80px;
   position: relative;
   right: 400px;
   top: 100px;
+}
+.marca{
+  margin-top: 40px;
+}
+.form-input {
+  font-size: 20px;
+  border: #000000 solid 3px;
+  border-radius: 20px;
+  padding: 4px;
+}
+.form-label {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+  color: aliceblue;
+}
+.form-boton {
+  border: 3px solid black;
+  border-radius: 20px;
+}
+/* terminan las propiedades del footer */
+h4{
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 18px;
+  color: aliceblue;
+}
+h3 {
+  position: relative;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  color: aliceblue;
+}
+.image-container {
+  position: relative;
+}
+
+.image-text-container {
+  position: absolute;
+  top: 20px;
+  left: 800px;
+}
+.text-container {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 24px;
+  color: aliceblue;
+}
+.boton-ver{
+  position: absolute;
+  border-radius: 15px;
+  border: 4px solid black;
+  font-size: 20px;
+  font-family: 'Montserrat', sans-serif;
+}
+.buton{
+  position: relative;
+  bottom: 300px;
+  right: 800px;
+}
+/* PRUEBA LOLA */
+.prueba {
+ display: grid;
+ grid-template-areas: 
+ "imgPrueba textoprueba"
+ ;
+ grid-template-columns: 30% 70%;
+ grid-template-rows: auto auto ;
+}
+.imgPrueba{grid-area: imgPrueba;}
+.textoprueba{grid-area: textoprueba;}
+.textolola {
+  font-family: 'Tilt Neon', cursive;
+  color: aliceblue;
+  font-size: 40px;
+
+}
+  .mobile-image {
+    display: none;
+  }
+
+  /* Muestra la imagen horizontal en pantallas grandes */
+  .desktop-image {
+    display: flex;
+    position: relative;
+    width: 100%;
+  }
+  .navegation-mobile {
+    display: none;
+  }
+   .navbar {
+    width:100%;
+  } 
+  .lala {
+    position: relative;
+    width: 300px;
+    display: flex;
+  }
+  .lala2 {
+    position: relative;
+    width: 200px;
+    display: flex;
+  }
+  /* PROPIEDADES TEXTOS */
+h2 {
+  position: relative;
+  left: 50px;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 34px;
+  color: aliceblue;
+}
+h4 {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  position: relative;
+  left: 12px;
 }
 }

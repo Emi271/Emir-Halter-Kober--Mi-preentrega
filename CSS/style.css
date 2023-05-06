@@ -46,19 +46,6 @@
   .ImgBanner4 {
     grid-area: ImgBanner4;
   }
-  /* .footerGrid{
-  display: grid;
-  grid-template-areas: 
-  "footer redes suscribe"
-  "footer redes suscribe"
-  "marca marca marca";
-  grid-template-columns: 33% 34% 33%;
-  grid-template-rows: auto auto auto;
-  }
-  .footer{grid-area: footer;}
-  .redes{grid-area: redes;}
-  .suscribe{grid-area: suscribe;}
-  .marca{grid-area: marca;} */
   /* PÁGINA INDEX HTML */
   .MainIndex {
     display: grid;
@@ -97,317 +84,88 @@
   /* VISTA DE PRODUCTOS */
   .product {
     position: relative;
-    width: 300px;
-  }
-  .product2 {
-    position: relative;
-    width: 200px;
-  }
-  .card {
-    background-color: aliceblue;
-    border: 5px solid gray;
+    width: 240px;
+    top: 10px;
+    height: 200px;
     border-radius: 20px;
   }
   .container {
-    display: flex;
-    justify-content: space-between;
-    margin: 80px;
-  }
-  /* LOGO WHATSAPPP FLOTANTE */
-  .btn-whatsapp {
-    position: fixed;
-    width: 80px;
-    height: 80px;
-    line-height: 55px;
-    bottom: 100px;
-    right: 100px;
-    /*  padding: 15px; */
-    border-radius: 50px;
-    text-align: center;
-    box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.3);
-    z-index: 100;
-  }
-  .logowsp {
-    display: block;
-    position: fixed;
-    justify-content: center;
-    width: 75px;
-  }
-  /* termina el logo de whatsapp */
-  .footer {
-    background-color: black;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-areas: "tarjeta1 tarjeta2 tarjeta3" "tarjeta4 tarjeta5 tarjeta6" "tarjeta7 tarjeta8 tarjeta9";
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(3, 350px);
     justify-content: space-evenly;
-    padding-bottom: 50px;
+    margin-left: 100px;
+    margin-bottom: 25px;
+    gap: 40px;
   }
-  .footer-enlaces {
-    width: 310px;
-    margin-top: 40px;
-    margin-left: 20px;
-    border-radius: 20px;
-    display: flex;
-    background-color: #040325;
+  .titulo-tarjeta {
+    margin: 0;
+    margin-top: 10px;
+    color: #000000;
+    font-size: 18px;
   }
-  .redes {
-    background-color: #040325;
-    width: 200px;
-    margin: 20px;
-    margin-top: 40px;
-    padding: 10px;
-    border-radius: 20px;
+  .precio-tarjeta {
+    font-family: "Tilt Neon", cursive;
   }
-  .suscribe {
-    display: flex;
+  .boton {
     position: relative;
-    right: 400px;
-    top: 100px;
+    font-size: 16px;
+    border-radius: 25px;
   }
-}
-nav ul {
-  list-style-type: none;
-  padding: 10px;
-  background-color: #000000;
-  margin: 0%;
-  display: flex;
-  text-align: center;
-}
-
-nav li {
-  float: left;
-}
-
-/* BARRA DE N|AVEGACIÓN: TEXTO */
-nav li a {
-  display: inline-block;
-  color: rgb(255, 255, 255);
-  justify-content: space-between;
-  padding: 10px;
-  text-decoration: none;
-  font-family: "Tilt Neon", cursive;
-  font-size: 20px;
-}
-
-/* EFECTO DE LA BARRA DE NAVEGACION */
-.first-ul li a:hover {
-  background-color: #0167ec;
-  transform: scale(1.3);
-  transition: all 0.4s ease-out;
-  border-radius: 20px;
-}
-
-.first-ul li a:not(:hover) {
-  transform: scale(1);
-  transition: all 0.4s ease-out;
-  border-radius: 20px;
-}
-
-.navbar-iconos {
-  height: 68px;
-  display: inline-flex;
-}
-
-.navbar-iconos ul li {
-  display: flex;
-  position: relative;
-  bottom: 8px;
-  justify-content: space-between;
-}
-
-.navbar {
-  display: inline-flex;
-  height: 68px;
-  width: 100%;
-  background-color: #000000;
-}
-
-.fa-user {
-  font-size: 40px;
-}
-
-.fa-cart-shopping {
-  font-size: 40px;
-}
-
-.fa-star {
-  font-size: 40px;
-}
-
-/* ELIMINAR MARCO BLANCO */
-body {
-  margin: 0%;
-  overflow-x: hidden;
-}
-
-/* PROPIEDADES FOOTER */
-.footer ul {
-  list-style-type: none;
-  display: grid;
-}
-
-.footer ul li a {
-  color: rgb(255, 255, 255);
-}
-
-.footer ul li a:hover {
-  transform: none;
-  background-color: #0167ec;
-}
-
-.footer li a {
-  font-family: "Montserrat", sans-serif;
-  font-size: 20px;
-}
-
-.footerGrid {
-  background-color: #000000;
-}
-
-.lola {
-  position: relative;
-  width: 600px;
-  padding: 20px;
-  border-radius: 80px;
-}
-
-.container-titulo {
-  font-size: 50px;
-}
-
-.container2 {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin: 0px;
-  margin-bottom: 30px;
-  background-color: #000000;
-}
-
-.buton2 {
-  font-size: 20px;
-  border-radius: 20px;
-  border: 4px solid black;
-}
-
-/* ACÁ EMPIEZAN LAS MEDIA QUERIES */
-/* MEDIA QUERIE VISTA DE TABLET  */
-/* termina la media querie tablet */
-/* MEDIA QUERIE TABLETS EN HORIZONTAL Y ESCRITORIO */
-@media only screen and (min-width: 1024px) {
-  .grid {
-    display: grid;
-    grid-template-areas: "nav" "main" "footer";
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto;
-  }
-  nav {
-    grid-area: nav;
-  }
-  main {
-    grid-area: main;
-  }
-  footer {
-    grid-area: footer;
-  }
-  /* PÁGINA: PARLANTES PORTÁTILES */
-  .mainGrid {
-    display: grid;
-    grid-template-areas: "TituloBanner TituloBanner TituloBanner" "ImgBanner ImgBanner ImgBanner" "TituloBanner2 TituloBanner2 TituloBanner2" "ImgBanner2 ImgBanner2 ImgBanner2" "TituloBanner3 TituloBanner3 TituloBanner3" "ImgBanner3 ImgBanner3 ImgBanner3" "TituloBanner4 TituloBanner4 TituloBanner4" "ImgBanner4 ImgBanner4 ImgBanner4";
-    grid-template-rows: auto auto auto auto auto auto auto;
-    grid-template-columns: 100%;
-  }
-  .TituloBanner {
-    grid-area: TituloBanner;
-  }
-  .ImgBanner {
-    grid-area: ImgBanner;
-  }
-  .TituloBanner2 {
-    grid-area: TituloBanner2;
-  }
-  .ImgBanner2 {
-    grid-area: ImgBanner2;
-  }
-  .TituloBanner3 {
-    grid-area: TituloBanner3;
-  }
-  .ImgBanner3 {
-    grid-area: ImgBanner3;
-  }
-  .TituloBanner4 {
-    grid-area: TituloBanner4;
-  }
-  .ImgBanner4 {
-    grid-area: ImgBanner4;
-  }
-  /* .footerGrid{
-  display: grid;
-  grid-template-areas: 
-  "footer redes suscribe"
-  "footer redes suscribe"
-  "marca marca marca";
-  grid-template-columns: 33% 34% 33%;
-  grid-template-rows: auto auto auto;
-  }
-  .footer{grid-area: footer;}
-  .redes{grid-area: redes;}
-  .suscribe{grid-area: suscribe;}
-  .marca{grid-area: marca;} */
-  /* PÁGINA INDEX HTML */
-  .MainIndex {
-    display: grid;
-    grid-template-areas: "encabezado encabezado encabezado" "ImgEncabezado ImgEncabezado ImgEncabezado" "encabezado2 encabezado2 encabezado2" "ImgEncabezado2 ImgEncabezado2 ImgEncabezado2" "ImgEncabezado3 ImgEncabezado3 ImgEncabezado3" "encabezado3 encabezado3 encabezado3" "ImgEncabezado4 ImgEncabezado4 ImgEncabezado4" "ImgEncabezado5 ImgEncabezado5 ImgEncabezado5" "btn-whatsapp btn-whatsapp btn-whatsapp";
-    grid-template-columns: 100%;
-    grid-template-rows: auto auto auto auto auto;
-  }
-  .encabezado {
-    grid-area: encabezado;
-  }
-  .ImgEncabezado {
-    grid-area: ImgEncabezado;
-  }
-  .encabezado2 {
-    grid-area: encabezado2;
-  }
-  .ImgEncabezado2 {
-    grid-area: ImgEncabezado2;
-  }
-  .ImgEncabezado3 {
-    grid-area: ImgEncabezado3;
-  }
-  .encabezado3 {
-    grid-area: encabezado3;
-  }
-  .ImgEncabezado4 {
-    grid-area: ImgEncabezado4;
-  }
-  .ImgEncabezado5 {
-    grid-area: ImgEncabezado5;
-  }
-  .btn-whatsapp {
-    grid-area: btn-whatsapp;
-  }
-  /* vista de productos pc laptop */
-  /* VISTA DE PRODUCTOS */
-  .product {
-    position: relative;
-    width: 300px;
-  }
-  .product2 {
-    position: relative;
-    width: 200px;
-  }
-  .card {
+  .tarjeta1 {
+    grid-area: tarjeta1;
     background-color: aliceblue;
-    border: 5px solid gray;
+    border: 6px solid rgb(228, 199, 199);
     border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
   }
-  .container {
-    display: flex;
-    justify-content: space-between;
-    margin: 80px;
+  .tarjeta2 {
+    grid-area: tarjeta2;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta3 {
+    grid-area: tarjeta3;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta4 {
+    grid-area: tarjeta4;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta5 {
+    grid-area: tarjeta5;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta6 {
+    grid-area: tarjeta6;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
   }
   /* LOGO WHATSAPPP FLOTANTE */
   .btn-whatsapp {
@@ -574,18 +332,159 @@ body {
     left: 12px;
   }
 }
-/* ACÁ TERMINAN LAS MEDIA QUERIES */
-.container {
+nav ul {
+  list-style-type: none;
+  padding: 10px;
+  background-color: #000000;
+  margin: 0%;
   display: flex;
+  text-align: center;
 }
 
-/* PROPIEDADES FORMULARIO DE INICIO SESION */
-form {
+nav li {
+  float: left;
+}
+
+/* BARRA DE N|AVEGACIÓN: TEXTO */
+nav li a {
+  display: inline-block;
+  color: rgb(255, 255, 255);
+  justify-content: space-between;
+  padding: 10px;
+  text-decoration: none;
+  font-family: "Tilt Neon", cursive;
+  font-size: 20px;
+}
+
+/* EFECTO DE LA BARRA DE NAVEGACION */
+.first-ul li a:hover {
+  background-color: #0167ec;
+  transform: scale(1.3);
+  transition: all 0.4s ease-out;
+  border-radius: 20px;
+}
+
+.first-ul li a:not(:hover) {
+  transform: scale(1);
+  transition: all 0.4s ease-out;
+  border-radius: 20px;
+}
+
+.navbar-iconos {
+  height: 68px;
+  display: inline-flex;
+}
+
+.navbar-iconos ul li {
+  display: flex;
   position: relative;
-  top: 20px;
-  left: 400px;
+  bottom: 8px;
+  justify-content: space-between;
 }
 
+.navbar {
+  display: inline-flex;
+  height: 68px;
+  width: 100%;
+  background-color: #000000;
+}
+
+.fa-user {
+  font-size: 40px;
+}
+
+.fa-cart-shopping {
+  font-size: 40px;
+}
+
+.fa-star {
+  font-size: 40px;
+}
+
+/* ELIMINAR MARCO BLANCO */
+body {
+  margin: 0%;
+  overflow-x: hidden;
+}
+
+/* PROPIEDADES FOOTER */
+.footer ul {
+  list-style-type: none;
+  display: grid;
+}
+
+.footer ul li a {
+  color: rgb(255, 255, 255);
+}
+
+.footer ul li a:hover {
+  transform: none;
+  background-color: #0167ec;
+}
+
+.footer li a {
+  font-family: "Montserrat", sans-serif;
+  font-size: 20px;
+}
+
+.footerGrid {
+  background-color: #000000;
+}
+
+.lola {
+  position: relative;
+  width: 600px;
+  padding: 20px;
+  border-radius: 80px;
+}
+
+.buton2 {
+  font-size: 20px;
+  border-radius: 20px;
+  border: 4px solid black;
+}
+
+/* Estilo para los campos de entrada */
+input[type=text], input[type=adress] {
+  width: 200px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+/* Estilo para las etiquetas */
+label {
+  display: block;
+  margin-bottom: 10px;
+}
+
+/* Estilo para el botón de envío */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  width: 90px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+label {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+.form-login {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 90px;
+  align-items: center;
+  top: 40px;
+  position: relative;
+}
+
+/* ACÁ TERMINAN LAS MEDIA QUERIES */
 @media (max-width: 767px) {
   main, footer, nav {
     display: flex;
@@ -653,7 +552,7 @@ form {
   .suscribe {
     display: flex;
     position: relative;
-    right: 400px;
+    align-items: center;
   }
   .marca {
     margin-top: 40px;
@@ -762,44 +661,85 @@ form {
   /* VISTA DE PRODUCTOS */
   .product {
     position: relative;
-    width: 150px;
-    justify-content: end;
+    width: 240px;
+    top: 10px;
+    height: 200px;
+    border-radius: 20px;
   }
-  .product2 {
+  .titulo-tarjeta {
+    margin: 0;
+    margin-top: 10px;
+    color: #000000;
+    font-size: 18px;
+  }
+  .precio-tarjeta {
+    font-family: "Tilt Neon", cursive;
+  }
+  .boton {
     position: relative;
-    width: 100px;
+    font-size: 16px;
+    border-radius: 25px;
   }
-  .card {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: space-between;
+  .tarjeta1 {
+    grid-area: tarjeta1;
     background-color: aliceblue;
-    border: 5px solid gray;
+    border: 6px solid rgb(228, 199, 199);
     border-radius: 20px;
-    width: 200px;
-    height: 190px;
-    flex-basis: calc(50% - 10px);
-    margin: 5px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
   }
-  .card-title {
-    margin: 0%;
-  }
-  .card-boton {
-    font-size: 14px;
+  .tarjeta2 {
+    grid-area: tarjeta2;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
     border-radius: 20px;
-    border: 4px solid black;
+    text-align: center;
+    height: 350px;
+    width: 250px;
   }
-  .card div {
-    position: relative;
-    align-items: center;
+  .tarjeta3 {
+    grid-area: tarjeta3;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta4 {
+    grid-area: tarjeta4;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta5 {
+    grid-area: tarjeta5;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta6 {
+    grid-area: tarjeta6;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
   }
   .container {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
     gap: 50px;
-    margin: 80px;
+    margin-top: 80px;
   }
   /* termina la vista de productos */
   /* PROPIEDADES TEXTOS */
@@ -1034,21 +974,88 @@ form {
   /* VISTA DE PRODUCTOS */
   .product {
     position: relative;
-    width: 300px;
-  }
-  .product2 {
-    position: relative;
-    width: 200px;
-  }
-  .card {
-    background-color: aliceblue;
-    border: 5px solid gray;
+    width: 240px;
+    top: 10px;
+    height: 200px;
     border-radius: 20px;
   }
+  .titulo-tarjeta {
+    margin: 0;
+    margin-top: 10px;
+    color: #000000;
+    font-size: 18px;
+  }
+  .precio-tarjeta {
+    font-family: "Tilt Neon", cursive;
+  }
+  .boton {
+    position: relative;
+    font-size: 16px;
+    border-radius: 25px;
+  }
+  .tarjeta1 {
+    grid-area: tarjeta1;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta2 {
+    grid-area: tarjeta2;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta3 {
+    grid-area: tarjeta3;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta4 {
+    grid-area: tarjeta4;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta5 {
+    grid-area: tarjeta5;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta6 {
+    grid-area: tarjeta6;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
   .container {
-    display: flex;
-    justify-content: space-between;
-    margin: 80px;
+    display: grid;
+    grid-template-areas: "tarjeta1 tarjeta2" "tarjeta3 tarjeta4" "tarjeta5 tarjeta6";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+    justify-content: space-evenly;
+    margin-left: 100px;
+    margin-bottom: 25px;
+    gap: 40px;
   }
   /* PROPIEDADES TEXTOS */
   h2 {

@@ -204,24 +204,94 @@
   /* vista de productos tablet */
   /* VISTA DE PRODUCTOS */
   .product {
-    position: relative;
-    width: 300px;
-  }
-  .product2 {
-    position: relative;
-    width: 200px;
-  }
-  .card {
-    background-color: aliceblue;
-    border: 5px solid gray;
+    position:relative;
+    width: 240px;
+    top: 10px;
+    height: 200px;
     border-radius: 20px;
+    }
+    .titulo-tarjeta {
+      margin: 0;
+      margin-top: 10px;
+      color: #000000;
+      font-size: 18px;
+    }
+    .precio-tarjeta {
+      font-family:"Tilt Neon", cursive; 
+    }
+    .boton {
+      position: relative;
+      font-size: 16px;
+      border-radius: 25px;
+    }
+  .tarjeta1 {
+    grid-area: tarjeta1;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta2 {
+    grid-area: tarjeta2;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta3 {
+    grid-area: tarjeta3;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta4 {
+    grid-area: tarjeta4;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta5 {
+    grid-area: tarjeta5;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta6 {
+    grid-area: tarjeta6;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
   }
   
-  .container {
-  display: flex;
-  justify-content: space-between;
-  margin: 80px;
-  }
+  .container{
+    display: grid;
+    grid-template-areas: 
+    "tarjeta1 tarjeta2"
+    "tarjeta3 tarjeta4"
+    "tarjeta5 tarjeta6";
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: auto auto auto;
+    justify-content: space-evenly;
+    margin-left:  100px;
+    margin-bottom: 25px;
+    gap: 40px;
+    }
   
   /* PROPIEDADES TEXTOS */
   h2 {

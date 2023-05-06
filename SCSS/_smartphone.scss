@@ -66,7 +66,7 @@ border-radius: 20px;
 .suscribe {
 display: flex;
 position: relative;
-right: 400px;
+align-items: center;
 }
 .marca{
 margin-top: 40px;
@@ -183,48 +183,91 @@ align-items: center;
 /* vista de productos smartphone */
 /* VISTA DE PRODUCTOS */
 .product {
-position: relative;
-width: 150px;
-justify-content: end;
-}
-.product2 {
-position: relative;
-width: 100px;
-}
+  position:relative;
+  width: 240px;
+  top: 10px;
+  height: 200px;
+  border-radius: 20px;
+  }
+  .titulo-tarjeta {
+    margin: 0;
+    margin-top: 10px;
+    color: #000000;
+    font-size: 18px;
+  }
+  .precio-tarjeta {
+    font-family:"Tilt Neon", cursive; 
+  }
+  .boton {
+    position: relative;
+    font-size: 16px;
+    border-radius: 25px;
+  }
+  .tarjeta1 {
+    grid-area: tarjeta1;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta2 {
+    grid-area: tarjeta2;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta3 {
+    grid-area: tarjeta3;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta4 {
+    grid-area: tarjeta4;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta5 {
+    grid-area: tarjeta5;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  .tarjeta6 {
+    grid-area: tarjeta6;
+    background-color: aliceblue;
+    border: 6px solid rgb(228, 199, 199);
+    border-radius: 20px;
+    text-align: center;
+    height: 350px;
+    width: 250px;
+  }
+  
 
-.card {
-display: flex;
-flex-direction: column;
-align-items: center;
-justify-content: space-between;
-background-color: aliceblue;
-border: 5px solid gray;
-border-radius: 20px;
-width: 200px;
-height: 190px;
-flex-basis: calc(50% - 10px);
-margin: 5px;
-}
-.card-title {
-margin: 0%;
-}
-.card-boton {
-font-size: 14px;
-border-radius: 20px;
-border: 4px solid black;
-}
-.card div {
-position: relative;
-align-items: center;
-}
 
 .container {
 display: flex;
 flex-direction: column;
 flex-wrap: wrap;
 gap: 50px;
-margin: 80px;
+margin-top: 80px;
 }
+
 /* termina la vista de productos */
 /* PROPIEDADES TEXTOS */
 h2 {
@@ -243,4 +286,9 @@ font-family: 'Montserrat', sans-serif;
 font-size: 22px;
 position: relative;
 }
+
+// Formulario
+
+
+
 }

@@ -91,304 +91,51 @@ background-color: #0167ec;
   padding: 20px;
   border-radius: 80px;
 }
-.container-titulo {
-  font-size: 50px;
-}
-.container2 {
-  display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
-  flex-direction: row;
-  margin: 0px;
-  margin-bottom: 30px;
-  background-color: #000000;
-}
+
 .buton2 {
   font-size: 20px;
   border-radius: 20px;
   border: 4px solid black;
 }
-/* ACÁ EMPIEZAN LAS MEDIA QUERIES */
 
-/* MEDIA QUERIE VISTA DE TABLET  */
-
-/* termina la media querie tablet */
-/* MEDIA QUERIE TABLETS EN HORIZONTAL Y ESCRITORIO */
-@media only screen and (min-width: 1024px) {
-.grid {
-  display: grid;
-  grid-template-areas: 
-  "nav"
-  "main"
-  "footer";
-  grid-template-columns: 100%;
-  grid-template-rows: auto auto auto;
-}
-nav {grid-area: nav;}
-main {grid-area: main;}
-footer {grid-area: footer;}
-/* PÁGINA: PARLANTES PORTÁTILES */
-.mainGrid {
-  display: grid;
-  grid-template-areas: 
-  "TituloBanner TituloBanner TituloBanner"
-  "ImgBanner ImgBanner ImgBanner"
-  "TituloBanner2 TituloBanner2 TituloBanner2"
-  "ImgBanner2 ImgBanner2 ImgBanner2"
-  "TituloBanner3 TituloBanner3 TituloBanner3"
-  "ImgBanner3 ImgBanner3 ImgBanner3"
-  "TituloBanner4 TituloBanner4 TituloBanner4"
-  "ImgBanner4 ImgBanner4 ImgBanner4";
-  grid-template-rows: auto auto auto auto auto auto auto;
-  grid-template-columns: 100%;
-}
-.TituloBanner{grid-area: TituloBanner;}
-.ImgBanner{grid-area: ImgBanner;}
-.TituloBanner2{grid-area: TituloBanner2;}
-.ImgBanner2{grid-area: ImgBanner2;}
-.TituloBanner3{grid-area: TituloBanner3;}
-.ImgBanner3{grid-area: ImgBanner3;}
-.TituloBanner4{grid-area: TituloBanner4;}
-.ImgBanner4{grid-area: ImgBanner4;}
-
-/* .footerGrid{
-display: grid;
-grid-template-areas: 
-"footer redes suscribe"
-"footer redes suscribe"
-"marca marca marca";
-grid-template-columns: 33% 34% 33%;
-grid-template-rows: auto auto auto;
-}
-.footer{grid-area: footer;}
-.redes{grid-area: redes;}
-.suscribe{grid-area: suscribe;}
-.marca{grid-area: marca;} */
-/* PÁGINA INDEX HTML */
-.MainIndex {
-  display: grid;
-  grid-template-areas: 
-  "encabezado encabezado encabezado"
-  "ImgEncabezado ImgEncabezado ImgEncabezado"
-  "encabezado2 encabezado2 encabezado2"
-  "ImgEncabezado2 ImgEncabezado2 ImgEncabezado2"
-  "ImgEncabezado3 ImgEncabezado3 ImgEncabezado3"
-  "encabezado3 encabezado3 encabezado3"
-  "ImgEncabezado4 ImgEncabezado4 ImgEncabezado4"
-  "ImgEncabezado5 ImgEncabezado5 ImgEncabezado5"
-  "btn-whatsapp btn-whatsapp btn-whatsapp";
-  grid-template-columns: 100%;
-  grid-template-rows: auto auto auto auto auto ;
-
-}
-.encabezado{grid-area: encabezado;}
-.ImgEncabezado{grid-area: ImgEncabezado;}
-.encabezado2{grid-area: encabezado2;}
-.ImgEncabezado2{grid-area: ImgEncabezado2;}
-.ImgEncabezado3{grid-area: ImgEncabezado3;}
-.encabezado3{grid-area: encabezado3;}
-.ImgEncabezado4{grid-area: ImgEncabezado4;}
-.ImgEncabezado5{grid-area: ImgEncabezado5;}
-.btn-whatsapp{grid-area: btn-whatsapp;}
-
-/* vista de productos pc laptop */
-/* VISTA DE PRODUCTOS */
-.product {
-  position: relative;
-  width: 300px;
-}
-.product2 {
-  position: relative;
+/* Estilo para los campos de entrada */
+input[type=text], input[type=adress] {
   width: 200px;
-}
-.card {
-  background-color: aliceblue;
-  border: 5px solid gray;
-  border-radius: 20px;
-}
-
-.container {
-display: flex;
-justify-content: space-between;
-margin: 80px;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
 }
 
-/* LOGO WHATSAPPP FLOTANTE */
-.btn-whatsapp {
-  position: fixed;
-  width: 80px; 
-  height: 80px; 
-  line-height: 55px;
-  bottom: 100px;
-  right: 100px;
- /*  padding: 15px; */
-  border-radius: 50px;
-  text-align: center;
-  box-shadow: 0px 1px 10px rgba(0,0,0,0.3);
-  z-index: 100;
-
-}
-.logowsp {
+/* Estilo para las etiquetas */
+label {
   display: block;
-  position: fixed;
-  justify-content: center;
-  width: 75px;
-}
-/* termina el logo de whatsapp */
-.footer{
-  background-color:black;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  padding-bottom: 50px;
-}
-.footer-enlaces{
-  width: 310px;
-  margin-top: 40px;
-  margin-left: 20px;
-  border-radius: 20px;
-  display: flex;
-  background-color: #040325;
-}
-.redes{
-  background-color: #040325;
-  width: 200px;
-  margin: 20px;
-  margin-top: 40px;
-  padding: 10px;
-  border-radius: 20px;
-}
-.suscribe {
-  display: flex;
-  position: relative;
-  right: 400px;
-  top: 100px;
-}
-.marca{
-  margin-top: 40px;
-}
-.form-input {
-  font-size: 20px;
-  border: #000000 solid 3px;
-  border-radius: 20px;
-  padding: 4px;
-}
-.form-label {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 16px;
-  color: aliceblue;
-}
-.form-boton {
-  border: 3px solid black;
-  border-radius: 20px;
-}
-/* terminan las propiedades del footer */
-h4{
-  position: relative;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 18px;
-  color: aliceblue;
-}
-h3 {
-  position: relative;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 28px;
-  color: aliceblue;
-}
-.image-container {
-  position: relative;
+  margin-bottom: 10px;
 }
 
-.image-text-container {
-  position: absolute;
-  top: 20px;
-  left: 800px;
+/* Estilo para el botón de envío */
+input[type=submit] {
+  background-color: #04AA6D;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  width: 90px;
+  border-radius: 4px;
+  cursor: pointer;
 }
-.text-container {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 24px;
-  color: aliceblue;
-}
-.boton-ver{
-  position: absolute;
-  border-radius: 15px;
-  border: 4px solid black;
-  font-size: 20px;
-  font-family: 'Montserrat', sans-serif;
-}
-.buton{
-  position: relative;
-  bottom: 300px;
-  right: 800px;
-}
-/* PRUEBA LOLA */
-.prueba {
- display: grid;
- grid-template-areas: 
- "imgPrueba textoprueba"
- ;
- grid-template-columns: 30% 70%;
- grid-template-rows: auto auto ;
-}
-.imgPrueba{grid-area: imgPrueba;}
-.textoprueba{grid-area: textoprueba;}
-.textolola {
-  font-family: 'Tilt Neon', cursive;
-  color: aliceblue;
-  font-size: 40px;
-
-}
-  .mobile-image {
-    display: none;
+label {
+  display: inline-block;
+  margin-bottom: 0;
   }
-
-  /* Muestra la imagen horizontal en pantallas grandes */
-  .desktop-image {
+.form-login {
     display: flex;
-    position: relative;
-    width: 100%;
-  }
-  .navegation-mobile {
-    display: none;
-  }
-   .navbar {
-    width:100%;
-  } 
-  .lala {
-    position: relative;
-    width: 300px;
-    display: flex;
-  }
-  .lala2 {
-    position: relative;
-    width: 200px;
-    display: flex;
-  }
-  /* PROPIEDADES TEXTOS */
-h2 {
+  flex-direction: column;
+  margin-bottom: 90px;
+  align-items: center;
+  top: 40px;
   position: relative;
-  left: 50px;
-  font-family: 'Montserrat', sans-serif;
-  font-size: 34px;
-  color: aliceblue;
-}
-h4 {
-  font-family: 'Montserrat', sans-serif;
-  font-size: 22px;
-  position: relative;
-  left: 12px;
-}
 }
 
 /* ACÁ TERMINAN LAS MEDIA QUERIES */
-.container {
-  display: flex;
-}
 
-/* PROPIEDADES FORMULARIO DE INICIO SESION */
-form {
-  position: relative;
-  top: 20px;
-  left: 400px;
-}
+
