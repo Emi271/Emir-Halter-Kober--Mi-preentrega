@@ -95,6 +95,10 @@ border-radius: 20px;
       bottom: 0;
       width: 100%;
     }
+    .icon-container {
+      overflow-x: hidden;
+      width: 100%;
+    }
     
     .navegation-mobile a {
       float: left;
@@ -165,9 +169,9 @@ font-size: 20px;
 font-size: 20px;
 }
 
-.body{
+body{
 overflow-x: hidden;
-width: max-content;
+width: 100%;
 margin: 0;
 padding: 0;
 

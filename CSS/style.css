@@ -580,6 +580,10 @@ label {
     bottom: 0;
     width: 100%;
   }
+  .icon-container {
+    overflow-x: hidden;
+    width: 100%;
+  }
   .navegation-mobile a {
     float: left;
     display: block;
@@ -642,9 +646,9 @@ label {
   .fa-home {
     font-size: 20px;
   }
-  .body {
+  body {
     overflow-x: hidden;
-    width: max-content;
+    width: 100%;
     margin: 0;
     padding: 0;
   }
