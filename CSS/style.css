@@ -574,7 +574,7 @@ label {
   }
   /* BARRA DE NAVEGACIÓN CON ICONOS */
   .navegation-mobile {
-    overflow: hidden;
+    overflow-x: hidden;
     background-color: #000000;
     position: fixed;
     bottom: 0;
@@ -588,6 +588,7 @@ label {
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+    overflow-x: hidden;
   }
   -mobile a:hover {
     background-color: #111;
@@ -622,7 +623,6 @@ label {
   }
   .navegation-mobile {
     box-sizing: border-box;
-    float: inline-start;
     height: 50px;
     width: 100%;
     background-color: #000000;
@@ -742,6 +742,8 @@ label {
     gap: 50px;
     margin-top: 80px;
     margin-bottom: 40px;
+    margin-right: 0;
+    padding-right: 0;
   }
   /* termina la vista de productos */
   /* PROPIEDADES TEXTOS */
